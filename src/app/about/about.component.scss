@@ -1,0 +1,31 @@
+@import "../../../variables.scss";
+
+.lg-text-header {
+  color: $primary-white;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.lg-text {
+  color: $primary-white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.sm-text-header {
+  color: $primary-white;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.sm-text {
+  color: $primary-white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.cta-button {
+  height: 50px;
+  font-size: 17px;
+  width: 150px;
+}

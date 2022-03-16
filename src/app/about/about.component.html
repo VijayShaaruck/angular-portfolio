@@ -1,0 +1,28 @@
+<div fxLayout="row" style="margin-top: 50px;">
+    <div fxLayout="column" fxLayoutGap="30px" fxLayoutAlign="center" fxFlex="65">
+        <div ngClass.lt-md="sm-text-header" ngClass.gt-sm="lg-text-header">
+            FULL STACK WEB DEVELOPER
+        </div>
+        <div fxLayout="column" fxLayoutGap="10px">
+            <div ngClass.lt-md="sm-text" ngClass.gt-sm="lg-text">
+                Welcome to my portfolio!
+            </div>
+            <div ngClass.lt-md="sm-text" ngClass.gt-sm="lg-text">
+                <div>I'm Vijay Shaaruck, a full stack developer based in Bengaluru, IN</div>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutGap="30px" class="nav-text-color">
+            <div>
+                <button mat-button class="cta-button nav-button selected-button hover"
+                    (click)="navigatePage('resume')">View Resume</button>
+            </div>
+            <div>
+                <button mat-button class="cta-button nav-button selected-button hover"
+                    (click)="navigatePage('resume')">Hire Now</button>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="column" fxFlex="35">
+        <img src="../../assets/Web-developer.jpg" />
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<mat-toolbar class="nav-container" >
+    <div fxLayout="row" fxLayoutAlign="space-between stretch" class="nav nav-text-color">
+        <div fxHide fxShow.lt-md  style="color: white;">
+            <button mat-icon-button [matMenuTriggerFor]="menu" class="nav-button">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item class="nav-button" [ngClass]="{'selected-button': selectedButton === 'about'}" (click)="navigatePage('about')">About Me</button>
+                <button mat-menu-item class="nav-button" [ngClass]="{'selected-button': selectedButton === 'resume'}" (click)="navigatePage('resume')">Resume</button>
+                <button mat-menu-item class="nav-button" [ngClass]="{'selected-button': selectedButton === 'contact'}" (click)="navigatePage('contact')">Hire Now</button>
+            </mat-menu>
+        </div>
+        <div fxHide fxShow.gt-sm fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="start center">
+        </div>
+        <div fxHide fxShow.gt-sm fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="end center">
+            <div fxLayout="row">
+                <button mat-button class="nav-button hover" [ngClass]="{'selected-button': selectedButton === 'about'}" (click)="navigatePage('about')">About Me</button>
+            </div>
+            <div fxLayout="row">
+                <button mat-button class="nav-button hover" [ngClass]="{'selected-button': selectedButton === 'resume'}" (click)="navigatePage('resume')">Resume</button>
+            </div>
+            <div fxLayout="row">
+                <button mat-button class="nav-button hover" [ngClass]="{'selected-button': selectedButton === 'contact'}" (click)="navigatePage('contact')">Hire Now</button>
+            </div>
+        </div>
+    </div>
+    <div fxHide fxShow.gt-sm fxLayout="row" fxFlex="10">
+    </div>
+</mat-toolbar>

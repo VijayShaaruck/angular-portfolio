@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $primary;
+}
+
+// Custom Scroll Styling
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: $primary;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $secondary;
+}
+
+.nav-text-color {
+  color: $primary-white;
+}
+
+.nav-button.hover:hover {
+  color: $primary;
+  background-color: $primary-yellow;
+}
+.nav-button:hover {
+  color: $primary-white;
+  background-color: $secondary;
+}
+
+.selected-button {
+  background-color: $secondary;
+  color: $primary-white;
+}
